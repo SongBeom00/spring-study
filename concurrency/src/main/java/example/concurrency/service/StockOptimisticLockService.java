@@ -17,7 +17,7 @@ public class StockOptimisticLockService {
 
     @Retryable(
             value = OptimisticLockingFailureException.class,
-            maxAttempts = 15, // 100개 동시에 요청 시 15초 설정 해야 동작됨.
+            maxAttempts = 20,
             backoff = @Backoff(delay = 100)
     )
     @Transactional
