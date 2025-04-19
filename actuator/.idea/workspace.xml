@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81999633-3c65-441a-b6fa-f8fa733e1373" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/controller/LogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/controller/TrafficController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/hello/container/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/hello/container/AppInitV1Servlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/hello/container/MyContainerInitV1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/hello/container/MyContainerInitV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/hello/servlet/HelloServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/java/hello/servlet/TestServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/resources/META-INF/services/jakarta.servlet.ServletContainerInitializer" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../server/src/main/webapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrency/src/main/java/example/concurrency/domain/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/../concurrency/src/main/java/example/concurrency/domain/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../concurrency/src/main/java/example/concurrency/service/StockOptimisticLockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../concurrency/src/main/java/example/concurrency/service/StockOptimisticLockService.java" afterDir="false" />
-    </list>
+    <list default="true" id="81999633-3c65-441a-b6fa-f8fa733e1373" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +35,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -74,31 +62,42 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build actuator.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.ActuatorApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/songbeom/idea-project/spring-study/actuator/build.gradle&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build actuator.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.ActuatorApplication.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/songbeom/idea-project/spring-study/actuator/src/main/java/hello/order/v1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/hello/order/v1" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="hello.order.v4" />
+      <recent name="hello.order.v3" />
+      <recent name="hello.order.v2" />
+      <recent name="hello.order.v1" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="ActuatorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="actuator.main" />
@@ -127,6 +126,7 @@
       <workItem from="1744709744881" duration="172000" />
       <workItem from="1744709930924" duration="5313000" />
       <workItem from="1744719488110" duration="754000" />
+      <workItem from="1745059223026" duration="7146000" />
     </task>
     <servers />
   </component>

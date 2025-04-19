@@ -1,21 +1,63 @@
 package hello.controller;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.actuate.logging.LogFileWebEndpoint;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.RequestToViewNameTranslator;
+import org.springframework.web.servlet.resource.ResourceUrlProvider;
+
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 @Slf4j
 @RestController
 public class TrafficController {
 
-    @GetMapping
+    @GetMapping("cpu")
     public String cpu(){
-        int value = 0;
-        for (int i = 0; i < 10000000L; i++) {
-            value += i;
+        log.info("cpu");
+        long value = 0;
+        for (long i = 0; i < 10000000000000L; i++) {
+            value++;
         }
-        System.out.println("value = " + value);
+        return "ok value  = " + value;
+    }
+
+    List<String> list = new ArrayList<>();
+
+    @GetMapping("jvm")
+    public String jvm(){
+        log.info("jvm");
+        long value = 0;
+        for (long i = 0; i < 10000000000000L; i++) {
+           list.add("hello jvm! " + i);
+        }
+        return "ok value  = " + value;
+    }
+
+    @Autowired
+    DataSource dataSource;
+
+    @GetMapping("/jdbc")
+    public String jdbc() throws SQLException {
+        log.info("jdbc");
+        Connection conn = dataSource.getConnection();
+        log.info("connection info = {}", conn);
+//        conn.close(); //커넥션을 닫지 않는다.
         return "ok";
     }
+
+    @GetMapping("/error-log")
+    public String error(){
+        log.error("error");
+        return "error";
+    }
+
+
 
 }
