@@ -19,6 +19,9 @@ repositories {
 }
 
 dependencies {
+	// aop 관련 의존성
+	implementation 'org.springframework.boot:spring-boot-starter-aop'
+
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
